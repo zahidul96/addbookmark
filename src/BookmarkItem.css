@@ -1,0 +1,29 @@
+.bookmark-parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    background-color: aliceblue;
+    width: 50%;
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+    
+}
+.li-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.button-style{
+    width: 15%;
+    padding: 8px 0;
+    border: 1px solid gray;
+    border-radius: 6px;
+    background-color: rgba(68, 112, 216, 0.372);
+    font-weight: 700;
+}
