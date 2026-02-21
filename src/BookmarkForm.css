@@ -32,6 +32,7 @@ button{
     border-radius: 6px;
     background-color: rgba(68, 112, 216, 0.372);
     font-weight: 700;
+    font-size: 0.8rem;
 }
 @media (max-width:800px){
     .container-item{

@@ -1,16 +1,15 @@
 import React,{useState} from "react";
 import "./BookmarkForm.css";
 const BookMarkForm = (props) => {
-  const [enteredTitle, setTitle] = useState("")
-  const [enteredUrl, setUrl] = useState("")
+  const [enteredTitle, setTitle] = useState(props.editData?props.editData.title:"")
+  const [enteredUrl, setUrl] = useState(props.editData?props.editData.url:"")
   const formSubmitHandler=(event)=>{
         event.preventDefault();
         const bookmarks = {
           title:enteredTitle,
           url:enteredUrl,
-          id:Math.random().toString()
+          id:props.editData?props.editData.id:Math.random().toString()
         };
-        console.log(bookmarks)
         props.onAddBookmarks(bookmarks)
         setTitle("")
         setUrl("")
